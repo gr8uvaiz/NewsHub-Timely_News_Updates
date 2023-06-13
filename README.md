@@ -1,7 +1,5 @@
 # NewsHub - Timely News Updates
 
-![NewsHub Logo](logo.png)
-
 NewsHub is a dynamic news website built with pure HTML, CSS, and JavaScript. It fetches data from the FetchAPI.org and provides users with up-to-date news from various reliable sources. This repository serves as the official GitHub repository for the NewsHub website.
 
 ## Features
