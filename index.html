@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NewsHub - Update You Timely</title>
+</head>
+<body>
+    <!-- Navbar  -->
+    <nav id="nav" class="flex justify-between">
+        <span class="Logo" onclick="window.addEventListener('load',fetchData('news'))">NewsHub</span>
+        <ul class="flex">
+            <li class="links"  id="Technology" onclick="handlelink('Tech')">Tech</li>
+            <li class="links" id="Sports" onclick="handlelink('Ipl')">Ipl</li>
+            <li class="links" id="Education" onclick="handlelink('Education')">Education</li>
+            <li class="links" id="Politics" onclick="handlelink('Food')">Food</li>
+        </ul>
+        <div class="search">
+            <input id="input" type="text">
+            <button onclick="handleInput('input')" id="searchBtn" class="btn">Search</button>
+            <button onclick="enableDark()" id="enableDark" class="btn">DarkMode</button>
+        </div>
+    </nav>
+
+
+    <!-- Main Content  -->
+
+    <main>
+        <div id="cardContent" class="card-content flex flex-wrap container">
+            
+        </div>
+    </main>
+
+
+    <template id="templateContainer">
+        <div class="card">
+            <div class="header">
+                <img id="img" src="https://placehold.co/400x600" alt="">
+            </div>
+            <div class="content">
+                <span id="myTitle">This is title</span>
+                <div id="date">28-09-2003</div>
+                <div id="myDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, distinctio. Fugiat, autem dolor, ad nesciunt facere iusto earum quidem, et totam iure quisquam.</div>
+                <button class="btn"><a href="#" target="_blank" id="myButton">Read More</a></button>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- Footer Content -->
+
+
+    <footer id="footer" class="flex justify-between">
+        <span>MadeByUvaiz</span>
+        <div class="copyright"><p>&copy; 2023 . All rights reserved.</p></div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
