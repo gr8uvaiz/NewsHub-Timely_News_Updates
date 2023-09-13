@@ -5,8 +5,7 @@ const  url = 'https://newsapi.org/v2/everything?q=';
 window.addEventListener('load', () => fetchData('news'));
 
 const fetchData = async (query) => {
-    /*const myurl = await `${url}${query}&apiKey=${API_KEY}`;*/
-    const myurl = await `https://newsapi.org/v2/everything?q=news&apiKey=47c5986c4799426a93040cb908ddbc36`;
+    const myurl = await `${url}${query}&apiKey=${API_KEY}`;
     const response = await fetch(myurl);
     const data = await response.json();
     // fillData(data.articles);
